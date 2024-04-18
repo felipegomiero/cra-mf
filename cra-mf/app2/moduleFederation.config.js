@@ -4,8 +4,7 @@ module.exports = {
 	name: "app2",
 	filename: "remoteEntry.js",
 	exposes: {
-		"./hello": "./src/mf/hello.tsx",
-		"./AppRoutes": "./src/mf/routes.tsx",
+		"./AppRoutes": "./src/routes.js",
 	},
 	remotes: {},
 	shared: {
