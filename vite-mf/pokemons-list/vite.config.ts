@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react-swc";
 import federation from "@originjs/vite-plugin-federation";
 
 // https://vitejs.dev/config/
@@ -10,8 +10,8 @@ export default defineConfig({
 			name: "pokemonList",
 			filename: "remoteEntry.js",
 			exposes: {
-				"./pokemon-list": "./src/components/pokemon-list",
-				"./pokemon": "./src/atoms/pokemon.ts",
+				"./PokemonList": "./src/components/PokemonList",
+				"./Pokemon": "./src/atoms/Pokemon.ts",
 			},
 			shared: ["react", "react-dom", "jotai"],
 		}),

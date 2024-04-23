@@ -1,5 +1,5 @@
 import { atom, useAtom } from "jotai";
-import { IPokemon } from "../types/pokemon";
+import { IPokemon } from "../types/Pokemon";
 
 type SelectPokemon = IPokemon | undefined;
 

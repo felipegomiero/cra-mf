@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import useSelectPokemon, {
 	addAllPokemons,
 	pokemons as pokemonState,
-} from "../../atoms/pokemon";
+} from "../../atoms/Pokemon";
 import { useAtom } from "jotai";
 
-import style from "./pokemon-list.module.css";
+import style from "./PokemonList.module.css";
 
 const PokemonList = () => {
 	const [, addPokemons] = useAtom(addAllPokemons);
